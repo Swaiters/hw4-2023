@@ -1,33 +1,40 @@
 
-a.skip{
-  background: white;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: left 1s ease-out;
-  z-index: 1;
-  /* Requirement 1 code here -- Do not remove this comment. */
-  position: absolute ; 
-  top: -200px; /* means it will be 200px above the frame grid runs like reverse y courdinate ( negative numbers ascend) */
-  left: -400px; /* means it will 400px left. numbers run like normal x cordinate 
-}
 
+  /* Requirement 1 code here -- Do not remove this comment. */
+  a.skip{
+    background: #red;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute ;
+    top: -200px; /* means it will be 200px above the frame grid runs like reverse y courdinate ( negative numbers ascend) */
+    left: -400px; /* means it will 400px left. numbers run like normal x cordinate */
+  }
 
   /* Requirement 2 code here -- Do not remove this comment. */
   nav a:focus{
-  text-decoration-line:overline ; 
- /* --thickness-- */
-  text-decoration-line: 10px;
-  /* --color-- */
-  text-decoration-color: yellow 
-  /*--remove outline-- */
-  outline: none;
+    text-decoration-line:overline ;
+    text-decoration-thickness: 10px; /* --thickness-- */
+    text-decoration-color: yellow;   /* --color-- */
+    outline: none; /*--remove outline-- */
+  }
 
-}
   /* Requirement 3 code here -- Do not remove this comment. */
-
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  row-gap: 30px;
+}
 
   /* Requirement 4 code here -- Do not remove this comment. */
+.intro{
+  background-image: url("images/header.jpg") ;
+  background-color: #858585 ;
+  min-height: 400px;
 
+
+}
 
   /* Requirement 5 code here -- Do not remove this comment. */
 
