@@ -36,7 +36,7 @@
     min-height: 400px;
     /* for the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -51,29 +51,29 @@
     width: 100%;
   }
   /* Requirement 7 code here -- Do not remove this comment. */
-  .about, .clients, .method, .contact{
-  grid-column: 1 / span 3 ;
-  max-height: 500px ;
+  .about-image, .clients-image, .method-image,.contact-image{
+    grid-column: 1 / span 3 ;
+    max-height: 500px ;
   }
 
   /* Requirement 8 code here -- Do not remove this comment. */
  .about, .about-image{
-grid-row: 1;
+    grid-row: 1;
  }
  .clients, .clients-image{
-  grid-row: 2;
+    grid-row: 2;
 
  }
  .method, .method-image{
-grid-row: 3;
+    grid-row: 3;
  }
 .contact, .contact-image{
-  grid-row: 4;
+    grid-row: 4;
 }
   /* Requirement 9 code here -- Do not remove this comment. */
   .about, .clients, .method, .contact{
     text-align: center;
-    max-height: 40%vh ;
+    max-height: 40 vh ;
     overflow: scroll;
   }
   
@@ -117,7 +117,10 @@ grid-column: 3 / span 2;
  }
 
   /* Requirement 15 code here -- Do not remove this comment. */
-  overflow: hidden;
+  .about-image, .clients-image, .method-image, .contact-image{
+    overflow: hidden;
+  }
+  
 }
 
 /** Code for prefers reduced motion **/
